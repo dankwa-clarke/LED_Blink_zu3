@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl axi_lite_ipif_v3_0_4  \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vhdl lib_cdc_v1_0_2  \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vhdl interrupt_control_v3_1_4  \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+
+vhdl axi_gpio_v2_0_26  \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/65b4/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../ledblink2.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+
+vhdl proc_sys_reset_v5_0_13  \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../ledblink2.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+
+vhdl fifo_generator_v13_2_5  \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/276e/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+# Do not sort compile order
+nosort

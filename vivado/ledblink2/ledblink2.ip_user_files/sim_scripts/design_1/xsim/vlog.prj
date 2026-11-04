@@ -1,0 +1,48 @@
+sv xilinx_vip --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/axi_vip_pkg.sv" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/axi4stream_vip_if.sv" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/axi_vip_if.sv" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/clk_vip_if.sv" \
+"G:/Vivado/2022.1/data/xilinx_vip/hdl/rst_vip_if.sv" \
+
+verilog axi_infrastructure_v1_1_0 --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+
+sv axi_vip_v1_1_12 --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/1033/hdl/axi_vip_v1_1_vl_rfs.sv" \
+
+sv zynq_ultra_ps_e_vip_v1_0_12 --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv" \
+
+verilog xil_defaultlib --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/sim/design_1_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../bd/design_1/ipshared/3405/src/ledtrigger.v" \
+"../../../bd/design_1/ip/design_1_led_blink101_0_0/sim/design_1_led_blink101_0_0.v" \
+
+verilog generic_baseblocks_v2_1_0 --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+
+verilog fifo_generator_v13_2_7 --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/83df/simulation/fifo_generator_vlog_beh.v" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v" \
+
+verilog axi_data_fifo_v2_1_25 --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/5390/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+
+verilog axi_register_slice_v2_1_26 --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+
+verilog axi_protocol_converter_v2_1_26 --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+verilog xil_defaultlib --include "G:/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ledblink2.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

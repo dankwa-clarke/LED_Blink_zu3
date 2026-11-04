@@ -1,0 +1,30 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.622768",
+   "Default View_TopLeft":"-71,-241",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port led_1 -pg 1 -lvl 4 -x 1190 -y 180 -defaultsOSRD
+preplace port port-id_led_0 -pg 1 -lvl 4 -x 1190 -y 60 -defaultsOSRD
+preplace inst led_blink101_0 -pg 1 -lvl 3 -x 1060 -y 60 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1060 -y 180 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 260 -y 20 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 760 -y 160 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 260 -y 240 -defaultsOSRD
+preplace netloc led_blink101_0_led 1 3 1 NJ 60
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 3 -40 140 570 60 930
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 -50 150 580 50 940
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 590 140n
+preplace netloc axi_gpio_0_GPIO 1 3 1 NJ 180
+preplace netloc axi_interconnect_0_M00_AXI 1 1 2 590 40 950J
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 0 2 -50 -100 560
+levelinfo -pg 1 -70 260 760 1060 1190
+pagesize -pg 1 -db -bbox -sgen -70 -120 1280 510
+"
+}
+{
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"5",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

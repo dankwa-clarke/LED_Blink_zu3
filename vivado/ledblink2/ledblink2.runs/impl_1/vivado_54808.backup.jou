@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun May 17 00:23:06 2026
+# Process ID: 54808
+# Current directory: G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/impl_1
+# Command line: vivado.exe -log led_blink101_tb.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source led_blink101_tb.tcl -notrace
+# Log file: G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/impl_1/led_blink101_tb.vdi
+# Journal file: G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/impl_1\vivado.jou
+# Running On: Charles_Clarke, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 42275 MB
+#-----------------------------------------------------------
+source led_blink101_tb.tcl -notrace

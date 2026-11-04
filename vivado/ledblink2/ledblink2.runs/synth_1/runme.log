@@ -1,0 +1,857 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Dev_Led Blink/LED_Blinker_Project'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'g:/Dev_Led Blink/LED_Blinker_Project' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_wrapper -part xczu3eg-sfvc784-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 48564
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2031.957 ; gain = 316.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:86]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 1 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:86]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:227]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:527]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_axi_protocol_converter' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_aw_channel' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_cmd_translator' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_incr_cmd' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_incr_cmd' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_wrap_cmd' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_wrap_cmd' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_cmd_translator' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_wr_cmd_fsm' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-226] default block is never used [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_wr_cmd_fsm' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_aw_channel' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_b_channel' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_b_channel' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_ar_channel' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-226] default block is never used [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_ar_channel' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_r_channel' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized1' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized1' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized2' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_simple_fifo__parameterized2' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s_r_channel' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axi_register_slice' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized1' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized1' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized2' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized2' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axi_register_slice' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_26_axi_register_slice' is unconnected for instance 'SI_REG' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_26_axi_register_slice' has 93 connections declared, but only 92 given [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axi_register_slice__parameterized0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized3' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized3' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized4' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized4' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized5' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized5' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized6' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axic_register_slice__parameterized6' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_26_axi_register_slice__parameterized0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_26_axi_register_slice' is unconnected for instance 'MI_REG' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_26_axi_register_slice' has 93 connections declared, but only 92 given [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_b2s' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_26_axi_protocol_converter' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:53]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:758]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:758]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 60 connections declared, but only 58 given [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:758]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:527]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:227]
+INFO: [Synth 8-6157] synthesizing module 'design_1_led_blink101_0_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/synth/design_1_led_blink101_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'led_blink101' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3405/src/ledtrigger.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'led_blink101' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3405/src/ledtrigger.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_led_blink101_0_0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/synth/design_1_led_blink101_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_0_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/synth/design_1_proc_sys_reset_0_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/synth/design_1_proc_sys_reset_0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:105982' bound to instance 'POR_SRL_I' of component 'SRL16' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:105982]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:105982]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/synth/design_1_proc_sys_reset_0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:176]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:176]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:176]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:176]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:176]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_PS' [G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1306]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_PS' (0#1) [G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1306]
+INFO: [Synth 8-6157] synthesizing module 'PS8' [G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:91150]
+INFO: [Synth 8-6155] done synthesizing module 'PS8' (0#1) [G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:91150]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO0DATAOUT' does not match port width (8) of module 'PS8' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:4658]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO0DATAENA' does not match port width (8) of module 'PS8' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:4659]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO1DATAOUT' does not match port width (8) of module 'PS8' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:4671]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO1DATAENA' does not match port width (8) of module 'PS8' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:4672]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN0OUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN1OUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN2OUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN3OUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP0OUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP1OUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP2OUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP3OUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PADO' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_BOOTMODE' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_CLK' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DONEB' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMA' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMACTN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMALERTN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMBA' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMBG' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCK' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCKE' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCKN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCSN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDM' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQ' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQS' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQSN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMODT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMPARITY' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMRAMRSTN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ERROROUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ERRORSTATUS' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_INITB' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTCK' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTDI' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTDO' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTMS' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MIO' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PORB' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PROGB' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_RCALIBINOUT' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_SRSTB' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ZQ' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN0IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN1IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN2IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN3IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP0IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP1IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP2IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PADI' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN0IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN1IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN2IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN3IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP0IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP1IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP2IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+WARNING: [Synth 8-7023] instance 'PS8_i' of module 'PS8' has 1015 connections declared, but only 957 given [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:3848]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:68]
+WARNING: [Synth 8-7071] port 'emio_enet0_signal_detect' of module 'zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e' is unconnected for instance 'inst' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:236]
+WARNING: [Synth 8-7071] port 'emio_enet1_signal_detect' of module 'zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e' is unconnected for instance 'inst' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:236]
+WARNING: [Synth 8-7071] port 'emio_enet2_signal_detect' of module 'zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e' is unconnected for instance 'inst' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:236]
+WARNING: [Synth 8-7071] port 'emio_enet3_signal_detect' of module 'zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e' is unconnected for instance 'inst' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:236]
+WARNING: [Synth 8-7023] instance 'inst' of module 'zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e' has 1491 connections declared, but only 1487 given [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:53]
+WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 43 connections declared, but only 41 given [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [G:/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:384]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
+WARNING: [Synth 8-3848] Net dp_audio_ref_clk in module/entity zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e does not have driver. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:347]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_0 in module/entity zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e does not have driver. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:1367]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_1 in module/entity zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e does not have driver. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:1368]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_2 in module/entity zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e does not have driver. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:1369]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_3 in module/entity zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e does not have driver. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_0.v:1370]
+WARNING: [Synth 8-7129] Port dp_audio_ref_clk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_0 in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_1 in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_2 in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_3 in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc0_fpd_rclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc0_fpd_wclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc1_fpd_rclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc1_fpd_wclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp0_fpd_rclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp0_fpd_wclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp1_fpd_rclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp1_fpd_wclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp2_fpd_rclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp2_fpd_wclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp3_fpd_rclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp3_fpd_wclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxi_lpd_rclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxi_lpd_wclk in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[15] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[14] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[13] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[12] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[11] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[10] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[9] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[8] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[7] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[6] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[15] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[14] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[13] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[12] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[11] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[10] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[9] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[8] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[7] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[6] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[3] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[2] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[1] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[0] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[31] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[30] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[29] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[28] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[27] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[26] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[25] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[24] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[23] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[22] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[21] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[20] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[19] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[18] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[17] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[16] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[15] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[14] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[13] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[12] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[11] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[10] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[9] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[8] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[7] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[6] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[5] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[4] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[3] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[2] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[1] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[0] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[31] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[30] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[29] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[28] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[27] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[26] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[25] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[24] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[23] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[22] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[21] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[20] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[19] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[18] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[17] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[16] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[15] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[14] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[13] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[12] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[11] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[10] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[9] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_4_0_zynq_ultra_ps_e is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2264.902 ; gain = 549.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2264.902 ; gain = 549.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2264.902 ; gain = 549.012
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 2264.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc] for cell 'design_1_i/led_blink101_0/inst'
+WARNING: [Vivado 12-584] No ports matched 'led_0'. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_0'. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_0'. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_1_tri_io[0]'. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_1_tri_io[0]'. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_1_tri_io[0]'. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_led_blink101_0_0/constrs/led_blink101.xdc] for cell 'design_1_i/led_blink101_0/inst'
+Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [G:/Dev_Led Blink/LED_Blinker_Project/constrs/led_blink101.xdc]
+Finished Parsing XDC File [G:/Dev_Led Blink/LED_Blinker_Project/constrs/led_blink101.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/Dev_Led Blink/LED_Blinker_Project/constrs/led_blink101.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2276.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  FDR => FDRE: 18 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2276.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2276.070 ; gain = 560.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2276.070 ; gain = 560.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i/zynq_ultra_ps_e_0/inst/PS8_i. (constraint file  {g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc}, line 25).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0/inst. (constraint file  {G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1/dont_touch.xdc}, line 30).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0/U0. (constraint file  {G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1/dont_touch.xdc}, line 33).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0/U0. (constraint file  {G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1/dont_touch.xdc}, line 41).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/led_blink101_0/inst. (constraint file  {G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1/dont_touch.xdc}, line 47).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/led_blink101_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2276.070 ; gain = 560.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_26_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_26_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2276.070 ; gain = 560.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               85 Bit    Registers := 4     
+	               51 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 6     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 59    
++---Muxes : 
+	   2 Input   85 Bit        Muxes := 4     
+	   2 Input   51 Bit        Muxes := 2     
+	   2 Input   40 Bit        Muxes := 8     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 23    
+	   2 Input    2 Bit        Muxes := 20    
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 42    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '85' to '77' bits. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '85' to '77' bits. [g:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.gen/sources_1/bd/design_1/ipshared/0a3f/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2276.070 ; gain = 560.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 3698.543 ; gain = 1982.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 3776.336 ; gain = 2060.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[0]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[7]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[6]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[5]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[4]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[3]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[2]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[1]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[4] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | memory_reg[3]  | 24     | 24         | 24     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | memory_reg[31] | 34     | 34         | 0      | 34      | 0      | 0      | 0      | 
+|dsrl__3     | memory_reg[31] | 17     | 17         | 0      | 17      | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG_PS |     1|
+|2     |CARRY8  |     4|
+|3     |LUT1    |   278|
+|4     |LUT2    |    48|
+|5     |LUT3    |   176|
+|6     |LUT4    |    67|
+|7     |LUT5    |    60|
+|8     |LUT6    |   160|
+|9     |MUXF7   |     3|
+|10    |PS8     |     1|
+|11    |SRL16   |     1|
+|12    |SRL16E  |    24|
+|13    |SRLC32E |    49|
+|14    |FDR     |     8|
+|15    |FDRE    |   564|
+|16    |FDSE    |    21|
+|17    |IOBUF   |     1|
+|18    |OBUF    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 913 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 3794.414 ; gain = 2067.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3794.414 ; gain = 2078.523
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 3794.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3819.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  FDR => FDRE: 8 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: 2943f21f
+INFO: [Common 17-83] Releasing license: Synthesis
+176 Infos, 311 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 3819.035 ; gain = 2142.445
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'G:/Dev_Led Blink/LED_Blinker_Project/vivado/ledblink2/ledblink2.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 01:32:43 2026...

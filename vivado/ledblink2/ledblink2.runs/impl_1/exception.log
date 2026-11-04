@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file G:\Dev_Led Blink\LED_Blinker_Project\vivado\ledblink2\ledblink2.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
